@@ -7,6 +7,9 @@ main.py is a program that searches random wikipedia pages for the
   4. Reaching a page that was previously reached in the same path
    (diverging) 
 
+See a full description of this phenomenon here:
+ https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy
+
 To run:
 	Navigate to the directory where main.py is located.
 	In your bash shell, type:
