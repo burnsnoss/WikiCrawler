@@ -9,6 +9,11 @@ main.py is a program that searches random wikipedia pages for the
 
 See a full description of this phenomenon here:
  https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy
+NOTE: as of the end of August 23, 2016, the statistics reported on 
+ this page have changed. Due to an edit of the wikipedia article
+ on 'consciousness', all pages that reach this page will diverge due
+ to it looping with the 'awareness' page. My test runs now show a new 
+ statistic of about 25% of pages converging to philosophy. 
 
 To run:
 	Navigate to the directory where main.py is located.
@@ -38,19 +43,22 @@ To run:
 		 the default value for iterations is 500
 
 Stats:
-	The program takes about 10 minutes to run on average on my 
-	 machine.
-	I am getting a rough value of about 95% of random pages
+	The program takes about 2-3 minutes to run on average on my 
+	 machine for 100 random pages.
+	I am getting a rough value of about 35% of random pages
 	 converging to the philosophy page and an average path 
-	 length of about 20-23 pages.
+	 length of about 12 pages.
 
 In order to reduce the number of HTML requests necessary, I 
  store every page that's been visited that converges in a
  dictionary along with the length of the path from that page
- to the philosophy page.
+ to the philosophy page. Future edits will probably involve
+ a txt file with these path lengths pre-stored for quick
+ loading and to save even more time.
 
 Interesting notes:
 	Common looping pages:
+		Consciousness/Awareness
 		Atom/Matter
 		Building/Structure
 		Genetics/Gene/Locus
@@ -70,30 +78,46 @@ Interesting notes:
 	 closing parenthesis. I'd imagine there are a few more 
 	 that don't work as well.
 
-Outputs from my own runs:
+Outputs from my own runs: (August 23, 2016)
 
 
-Diverged count:				19
-Converged count:			481
-Convergence percentage:		96.2 %
-Random pages generated:		500
+Diverged count:			66
+Converged count:		34
+Convergence percentage:		34.0 %
+Random pages generated:		100
 Maximum path length:		50
-Runtime:					693.227 seconds
-
--------------------------------------------
-
-Diverged count:				26
-Converged count:			474
-Convergence percentage:		95.0 %
-Random pages generated:		500
-Maximum path length:		50
-Runtime:					669.007 seconds
+Average path length:		11
+Runtime:			189.41 seconds
 
 --------------------------------------------
 
-Diverged count:				22
-Converged count:			478
-Convergence percentage:		96.0 %
-Random pages generated:		500
+Diverged count:			70
+Converged count:		30
+Convergence percentage:		30.0 %
+Random pages generated:		100
 Maximum path length:		50
-Runtime:					653.642 seconds
+Average path length:		12
+Runtime:			166.954 seconds
+
+--------------------------------------------
+
+Diverged count:			61
+Converged count:		39
+Convergence percentage:		39.0 %
+Random pages generated:		100
+Maximum path length:		50
+Average path length:		12
+Runtime:			150.386 seconds
+
+--------------------------------------------
+
+Diverged count:			65
+Converged count:		35
+Convergence percentage:		35.0 %
+Random pages generated:		100
+Maximum path length:		50
+Average path length:		12
+Runtime:			155.036 seconds
+
+
+
